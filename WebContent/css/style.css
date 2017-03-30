@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+small {
+	font-size: 80% !important;
+}
+
+body {
+	overflow-y: scroll;
+	background-image: url('../img/body_bg.png');
+	background-repeat: repeat-x;
+	background-position: 0 285px;
+	background-size: 100% 64px;
+}
+
+#menu {
+	margin-top: 30px;
+}
+
+.jumbotron {
+	margin-top: 10px;
+	background-image: url('../img/licence_info_medium_alpha.png');
+	background-repeat: no-repeat;
+	background-position: right 30px center;
+
+}
+
+.breadcrumb {
+	background-color: white;
+}
+
+div.general {}
+
+div.systeme {}
+
+div.business {}
+
+.lien_general {
+	color: black;
+	text-decoration: none;
+}
+
+.lien_general:hover {
+	text-decoration: underline;
+}
+
+.entete {
+	background-color: #d9edf7;
+	padding: 15px;
+	height: 64px;
+}
+
+.contenu {
+	margin-top: 25px;
+}

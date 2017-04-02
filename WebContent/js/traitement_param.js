@@ -1,7 +1,6 @@
 $(document).ready(function() {
   console.log("page_chargée");
   $("#inscriptionValide").hide();
-  $(".identifiants").hide();
   $("#mdpInvalide").hide();
   $("#dateDeNaissInvalide").hide();
 
@@ -30,10 +29,6 @@ $("#formulaire").submit(function(event){
   else{ //Tout va bien l'inscription se fait et on passe à l'écran d'accueil
     console.log("mot de passe ok");
     $("#inscriptionValide").show("slow").delay(3000).hide("slow");
-    $(".identifiants").show("slow").delay(3000).hide("slow");
-    $("#formulaire").hide();
-    var delayAccueil = 3000;
-    setTimeout(function(){ window.location.href="page_accueil.html"; }, delayAccueil);
   }
 
 // Calcul l'age de la personne à partir de la date de naissance saisie

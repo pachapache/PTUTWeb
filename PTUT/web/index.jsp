@@ -1,12 +1,14 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <script type="text/javascript" src="../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../js/npm.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/npm.js"></script>
 
   <title>E-breath</title>
 </head>
@@ -19,7 +21,7 @@
       <div class="container">
       <div class ="row">
       <div class="col-xs-12" >
-        <button type="button" class="btn btn-default navbar-btn" onclick="self.location.href='page_connexion.html'">Je me connecte</button>
+        <button type="button" class="btn btn-default navbar-btn" onclick="self.location.href='./html/page_connexion.html'">Je me connecte</button>
       </div>
       </div>
       </div>
@@ -36,20 +38,20 @@
           <!-- Page 1 -->
           <div class="item active">
             <div class="carousel-page">
-              <img src="../img/girl_run.jpg" class="img-responsive" style="margin:0px auto;" />
+              <img src="./img/girl_run.jpg" class="img-responsive" style="margin:0px auto;" />
             </div>
             <div class="carousel-caption"></div>
           </div>
           <!-- Page 2 -->
           <div class="item">
             <div class="carousel-page">
-              <img src="../img/girl_breath.jpg" class="img-responsive img-rounded" style="margin:0px auto;"  /></div>
+              <img src="./img/girl_breath.jpg" class="img-responsive img-rounded" style="margin:0px auto;"  /></div>
             <div class="carousel-caption"></div>
           </div>
           <!-- Page 3 -->
           <div class="item">
             <div class="carousel-page">
-              <img src="../img/health.jpg" class="img-responsive img-rounded" style="margin:0px auto;"  />
+              <img src="./img/health.jpg" class="img-responsive img-rounded" style="margin:0px auto;"  />
             </div>
           <div class="carousel-caption"></div>
           </div>

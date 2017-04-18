@@ -21,7 +21,7 @@
       <div class="container">
       <div class ="row">
       <div class="col-xs-12" >
-        <button type="button" class="btn btn-default navbar-btn" onclick="self.location.href='./html/page_connexion.html'">Je me connecte</button>
+        <button type="button" class="btn btn-default navbar-btn" onclick="self.location.href='page_connexion.html'">Je me connecte</button>
       </div>
       </div>
       </div>

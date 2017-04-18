@@ -1,18 +1,8 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- * Author:  HP
- * Created: 3 avr. 2017
- */
-
---Crétation des individus
-INSERT INTO INDIVIDU VALUES (1,'Dupond','Marc','Masculin',54,75,0,'Marc.Dupond@gmail.com','MarcD');
-INSERT INTO INDIVIDU VALUES (2,'Tchoupi','Vittel','Feminin',28,55,1,'Vittel.Tchoupi@gmail.com','VittelT');
-INSERT INTO INDIVIDU VALUES (3,'Acer','Evian','Masculin',18,50,1,'Evian.Acer@gmail.com','EvianA');
-INSERT INTO INDIVIDU VALUES (4,'Google','Veronique','Feminin',54,75,0,'Veronique.Google@gmail.com','VeroniqueG');
+﻿--Crétation des utilisateurs
+INSERT INTO UTILISATEUR VALUES (1,'Dupond','Marc','Masculin',54,75,0,'Marc.Dupond@gmail.com','MarcD');
+INSERT INTO UTILISATEUR VALUES (2,'Tchoupi','Vittel','Feminin',28,55,1,'Vittel.Tchoupi@gmail.com','VittelT');
+INSERT INTO UTILISATEUR VALUES (3,'Acer','Evian','Masculin',18,50,1,'Evian.Acer@gmail.com','EvianA');
+INSERT INTO UTILISATEUR VALUES (4,'Google','Veronique','Feminin',54,75,0,'Veronique.Google@gmail.com','VeroniqueG');
 
 --Valeurs de Marc Dupond
 INSERT INTO DONNEES VALUES (1,1,'15:02:00','2017-3-7',12);

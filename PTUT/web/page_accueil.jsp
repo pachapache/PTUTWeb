@@ -1,14 +1,15 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <script type="text/javascript" src="../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../js/npm.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript" src="../js/traitement_accueil.js"></script>
+  <script type="text/javascript" src="./js/traitement_accueil.js"></script>
 
   <title>E-breath</title>
 </head>
@@ -32,7 +33,7 @@
             <li><a href="../html/page_statistique.html">Statistique</a></li>
             <li><a href="../html/page_chill.html">Chill</a></li>
             <li class="divider"></li>
-            <li><a href="../html/page_param.html">Paramètres</a></li>
+            <li><a href="../html/page_param.html">ParamÃ¨tres</a></li>
           </ul>
         </li>
       </ul>

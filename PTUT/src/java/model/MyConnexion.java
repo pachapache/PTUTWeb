@@ -1,4 +1,14 @@
-package Connexion;
+// package model;
+// public class Main {
+    
+// public static void main(String[] args) {
+      //MyConnexion conne = new MyConnexion();
+      //conne.connecteToi();
+    //}
+   
+//}
+
+package model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

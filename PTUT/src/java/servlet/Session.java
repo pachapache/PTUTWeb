@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import com.google.gson.*;
 import model.DAO;
-import static model.DataSourceConfig.getDataSource;
 
 
 @WebServlet(name = "Session", urlPatterns = {"/Session"})
@@ -27,7 +26,7 @@ public class Session extends HttpServlet {
         response.setContentType("application/json;charset=UTF-8");
 
         try (PrintWriter out = response.getWriter()) {
-            DAO dao = new DAO(getDataSource());
+            DAO dao = new DAO(DAO.getDataSource());
             boolean connexion = dao.login("Marc.Dupond@gmail.com","MarcD");
             System.out.println("youuuuu");
 

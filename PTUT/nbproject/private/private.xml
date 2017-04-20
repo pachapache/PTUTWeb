@@ -3,15 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/model/DAO.java</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Session.java</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/page_connexion.html</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/WEB-INF/glassfish-web.xml</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Connexion.java</file>
             <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Inscription.java</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/index.jsp</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/model/MyConnexion.java</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/form_inscription.jsp</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/InsertMySQL_PTUT.sql</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/MySQL_PTUT.sql</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/model/DataSourceConfig.java</file>
         </group>
     </open-files>
 </project-private>

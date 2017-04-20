@@ -19,32 +19,48 @@ public class DAO {
     public DAO(DataSource dataSource) {
         this.myDataSource = dataSource;
     }
+    
+    public static DataSource getDataSource() throws SQLException {
+		com.mysql.jdbc.jdbc2.optional.MysqlDataSource ds = new com.mysql.jdbc.jdbc2.optional.MysqlDataSource();
+		ds.setDatabaseName("ptut_freq_res");
+		ds.setUser("root");
+		ds.setPassword("root");
+		ds.setServerName("localhost");
+		ds.setPortNumber(3306);
+		return ds;
+	}
 
 
-    public Boolean login(String id, String mdp) throws Exception {
+    public boolean login(String id, String mdp) throws Exception {
         if (null == id) {
             throw new Exception("id is null");
         }
-        if (null == id) {
+        if (null == mdp) {
             throw new Exception("mdp is null");
         }
-        String login = null;
+        
         boolean result = false;
-        String sql = "SELECT MDP FROM individu WHERE ADRESSE_MAIL = ?";
-        try (Connection connection = myDataSource.getConnection();
-                PreparedStatement stmt = connection.prepareStatement(sql)) {
+        
+        PreparedStatement stmt = null;
+        String sql = "SELECT MDP FROM utilisateur WHERE ADRESSE_MAIL = ?";
+        try {
+            Connection connection = myDataSource.getConnection();
+            stmt = connection.prepareStatement(sql);
             stmt.setString(1, id);
             try (ResultSet rs = stmt.executeQuery()) {
-                while (rs.next()) {
-                    login = rs.getString("MDP");
+                if (rs.next()) {
+                    String login = rs.getString("MDP");
+                    if (login.equals(mdp)) {
+                        result = true;
+                    }
                 }
-            }
-        }
-        if (login.equals(mdp)) {
-            result = true;
-        }
+            }      
+        }catch(SQLException e){
+            System.out.println(e);
+        } 
         return result;
     }
+    
     
     public void inscription(String nom, String prenom, String sexe, int age, int poids, 
             boolean sportif, String mail, String mdp) throws Exception { 

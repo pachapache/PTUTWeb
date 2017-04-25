@@ -1,8 +1,8 @@
 ﻿--Crétation des utilisateurs
-INSERT INTO UTILISATEUR VALUES (1,'Dupond','Marc','Masculin',54,75,0,'Marc.Dupond@gmail.com','MarcD');
-INSERT INTO UTILISATEUR VALUES (2,'Tchoupi','Vittel','Feminin',28,55,1,'Vittel.Tchoupi@gmail.com','VittelT');
-INSERT INTO UTILISATEUR VALUES (3,'Acer','Evian','Masculin',18,50,1,'Evian.Acer@gmail.com','EvianA');
-INSERT INTO UTILISATEUR VALUES (4,'Google','Veronique','Feminin',54,75,0,'Veronique.Google@gmail.com','VeroniqueG');
+INSERT INTO UTILISATEUR VALUES (null,'Dupond','Marc','Homme','1980-3-7',75,0,'Marc.Dupond@gmail.com','MarcD');
+INSERT INTO UTILISATEUR VALUES (null,'Tchoupi','Vittel','Femme','1996-12-15',55,1,'Vittel.Tchoupi@gmail.com','VittelT');
+INSERT INTO UTILISATEUR VALUES (null,'Acer','Evian','Homme','1958-1-20',50,1,'Evian.Acer@gmail.com','EvianA');
+INSERT INTO UTILISATEUR VALUES (null,'Google','Veronique','Femme','1970-6-18',75,0,'Veronique.Google@gmail.com','VeroniqueG');
 
 --Valeurs de Marc Dupond
 INSERT INTO DONNEES VALUES (1,1,'15:02:00','2017-3-7',12);

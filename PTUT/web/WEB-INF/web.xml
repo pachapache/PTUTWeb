@@ -8,17 +8,47 @@
         <servlet-name>Inscription</servlet-name>
         <servlet-class>servlet.Inscription</servlet-class>
     </servlet>
-    
+    <servlet>
+        <servlet-name>Settings</servlet-name>
+        <servlet-class>servlet.Settings</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Accueil</servlet-name>
+        <servlet-class>servlet.Accueil</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Deconnexion</servlet-name>
+        <servlet-class>servlet.Accueil</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Monprofil</servlet-name>
+        <servlet-class>servlet.Monprofil</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Connexion</servlet-name>
         <url-pattern>/Connexion</url-pattern>
     </servlet-mapping>
-        
     <servlet-mapping>
         <servlet-name>Inscription</servlet-name>
         <url-pattern>/Inscription</url-pattern>
     </servlet-mapping>
-        <session-config>
+    <servlet-mapping>
+        <servlet-name>Settings</servlet-name>
+        <url-pattern>/Settings</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Accueil</servlet-name>
+        <url-pattern>/Accueil</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Deconnexion</servlet-name>
+        <url-pattern>/Deconnexion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Monprofil</servlet-name>
+        <url-pattern>/Monprofil</url-pattern>
+    </servlet-mapping>
+    <session-config>
         <session-timeout>
             30
         </session-timeout>

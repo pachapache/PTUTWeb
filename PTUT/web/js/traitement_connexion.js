@@ -1,6 +1,5 @@
 $(document).ready(function() {
-
-  $(".texte_identifiant").hide();
+    $("#pbConnexion").hide();
 
   $('#lien_identifiant').click(function() {
     $(".texte_identifiant").slideToggle();
@@ -10,6 +9,8 @@ $(document).ready(function() {
       $(this).html("J'ai oublié mon identifiant je clique ici");
     }
   })
+  
+
 
 
 });

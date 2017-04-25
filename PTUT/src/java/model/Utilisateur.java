@@ -1,29 +1,31 @@
 package model;
 
+import java.util.Date;
+
 public class Utilisateur {
-    private Long id;
+    private int id;
     private String nom;
     private String prenom;
     private String sexe;
-    private int age;
+    private Date dateNaissance;
     private int poids;
     private boolean sportif;
     private String mail;
     private String mdp;
 
-    public Utilisateur(Long id, String nom, String prenom, String sexe, int age, int poids, boolean sportif, String mail, String mdp) {
+    public Utilisateur(int id, String nom, String prenom, String sexe, Date ddn, int poids, boolean sportif, String mail, String mdp) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.sexe = sexe;
-        this.age = age;
+        this.dateNaissance = ddn;
         this.poids = poids;
         this.sportif = sportif;
         this.mail = mail;
         this.mdp = mdp;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
@@ -39,8 +41,8 @@ public class Utilisateur {
         return sexe;
     }
 
-    public int getAge() {
-        return age;
+    public Date getDateNaissance() {
+        return dateNaissance;
     }
 
     public int getPoids() {
@@ -59,7 +61,7 @@ public class Utilisateur {
         return mdp;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -75,8 +77,8 @@ public class Utilisateur {
         this.sexe = sexe;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(Date ddn) {
+        this.dateNaissance = ddn;
     }
 
     public void setPoids(int poids) {

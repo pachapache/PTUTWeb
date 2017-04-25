@@ -1,3 +1,5 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +12,8 @@
 
 
         <title>E-breath</title>
-
+        ${error}
+        
     </head>
 
     <body>
@@ -24,7 +27,7 @@
                         <div class="form-group">
                             <label for="identifiant">Veuillez saisir votre identifiant</label>
                             <input class="form-control" name="identifiant" placeholder="Identifiant">
-                            <a href="#" id="lien_identifiant">J'ai oublié mon identifiant je clique ici</a>
+                            <a href="#" id="lien_identifiant">J'ai oublié mon identifiant ? Je clique ici</a>
                             <div class="texte_identifiant">
                                 Votre identifiant est votre adresse mail
                             </div>         
@@ -33,14 +36,24 @@
                         <div class="form-group">
                             <label for="motDePasse">Veuillez saisir votre mot de passe</label>
                             <input type="password" class="form-control" name="motDePasse" placeholder="motDePasse">
-                            <a href="#" id="lien_identifiant">J'ai oublié mon mot de passe je clique ici</a>
+                            <a href="#" id="lien_identifiant">J'ai oublié mon mot de passe ? Je clique ici</a>
                         </div>
+                                           <div class="container">
+                        <div class ="row">
+                            <div class="col-xs-12">
+                                <div class= "alert alert-danger" id="pbConnexion">
+                                    <b>Attention!</b> Identifiant et/ou mot de passe incorrect
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div class="seCo">
                             <button type="submit" class="btn btn-primary">
                                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Se connecter
                             </button>
                         </div>
-                    </form>
+                    </form>                  
 
                 </div>
 

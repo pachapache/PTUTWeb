@@ -44,7 +44,11 @@ $(document).ready(function(){
            ['00h00',  12],
            ['01h00',  10],
            ['02h00',   9 ],
-           ['03h00',  12]
+           ['03h00',   9 ],
+           ['04h00',   9 ],
+           ['05h00',   9 ],
+           ['07h00',   9 ],
+           ['06h00',  12]
          ]);
          var options = {
            title: 'Ma fréquence respiratoire quotidienne',

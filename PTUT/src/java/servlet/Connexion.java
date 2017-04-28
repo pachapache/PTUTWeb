@@ -26,7 +26,7 @@ public class Connexion extends HttpServlet {
             String mails = request.getParameter("identifiant");
             String mdp = request.getParameter("motDePasse");
             String vu = "/page_connexion.jsp";
-            String vu_Valide = "/page_accueil.jsp";
+            String vu_Valide = "/accueil.jsp";
             
             if(mails==null&mdp==null){
                  request.getRequestDispatcher(vu).forward(request, response);

@@ -24,8 +24,8 @@ public class Settings extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             
-            String vu = "/page_param.jsp";
-            String vu_Valide = "/page_accueil.jsp";
+            String vu = "/param.jsp";
+            String vu_Valide = "/accueil.jsp";
           
             request.getRequestDispatcher(vu).forward(request, response);
 

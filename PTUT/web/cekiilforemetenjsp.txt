@@ -1,0 +1,4 @@
+form_inscription.jsp
+index.jsp
+
+Dans page_connexion remettre le lien de form_inscription.jsp

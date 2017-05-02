@@ -1,7 +1,7 @@
 $(document).ready(function(){
 var timerIn = 200;
 var timerOut = 200;
-var myFqRespiratoire = 12;
+var myFqRespiratoire =  12;
 
 $('ul.nav li.dropdown').hover(function() {
     $(this).find('> .dropdown-menu').stop(true, true).fadeIn(timerIn);
@@ -20,7 +20,7 @@ google.charts.load('current', {'packages':['gauge']});
          ['Fq Respiratoire', myFqRespiratoire],
        ]);
        var options = {
-          width: 1000, height: 440,
+          width: 500, height: 440,
           greenFrom:12, greenTo:18,
           redFrom: 18, redTo: 20,
           max: 20,

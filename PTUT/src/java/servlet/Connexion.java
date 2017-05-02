@@ -2,7 +2,6 @@ package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import static java.lang.System.out;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -12,9 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import model.DAO;
-import servlet.Monprofil;
 
+//Permet la redirection en cas de connexion
 @WebServlet(name = "Connexion", urlPatterns = {"/Connexion"})
 public class Connexion extends HttpServlet {
 
@@ -22,41 +20,29 @@ public class Connexion extends HttpServlet {
             throws ServletException, IOException, SQLException, Exception {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-
-            String mails = request.getParameter("identifiant");
-            String mdp = request.getParameter("motDePasse");
-            String vu = "/page_connexion.jsp";
-            String vu_Valide = "/accueil.jsp";
             
-            if(mails==null&mdp==null){
-                 request.getRequestDispatcher(vu).forward(request, response);
-            } else {
-                try {
-                    DAO dao = new DAO(DAO.getDataSource());
-                    boolean connexion = dao.login(mails, mdp);
-                    if (connexion == true) {
-                        request.getRequestDispatcher(vu_Valide).forward(request, response);
-                        HttpSession session = request.getSession();
-                        int id = dao.idByMail(mails);
-                        session.setAttribute("id", id);
-                        String message = "<script> $(document).ready(function () {\n $(\"#pbConnexion\").hide();})</script>";
-                        request.getServletContext().setAttribute("error", message);
-                    } else {
-                        //String message = "<strong> Identifiant et/ou mots de passe incorrect </srtong>";
-                        request.getRequestDispatcher(vu).forward(request, response);
-                        String message = "<script> $(document).ready(function () {\n $(\"#pbConnexion\").show();})</script>";
-                        request.getServletContext().setAttribute("error", message);
-                        System.out.println("pas de co");
-                    }
+            String vu_connecte = "/accueilC.jsp";//Session active
+            String vu_connexion = "/connexion.jsp";//Session non active
 
-                } catch (Exception ex) {
-                    Logger.getLogger("Servlet Connexion").log(Level.SEVERE, "Action en erreur", ex);
-                    request.setAttribute("message", ex.getMessage());
+            HttpSession session = request.getSession(false);//Recupere session
+            
+            try {
+                String result=(String) session.getAttribute("nom");
+                if (result!=null){
+                request.getRequestDispatcher(vu_connecte).forward(request, response);
+                }else{
+                String message = "<script> $(document).ready(function () {\n $(\"#pbConnexion\").hide();})</script>";
+                request.getServletContext().setAttribute("error", message);
+                request.getRequestDispatcher(vu_connexion).forward(request, response);  
                 }
+            } catch (Exception e) {
+                String message = "<script> $(document).ready(function () {\n $(\"#pbConnexion\").hide();})</script>";
+                request.getServletContext().setAttribute("error", message);
+                request.getRequestDispatcher(vu_connexion).forward(request, response);
             }
         }
     }
-
+         
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -80,6 +66,6 @@ public class Connexion extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

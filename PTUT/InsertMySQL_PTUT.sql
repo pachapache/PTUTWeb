@@ -1,5 +1,5 @@
 ﻿--Crétation des utilisateurs
-INSERT INTO UTILISATEUR VALUES (null,'Dupond','Marc','Homme','1980-3-7',75,0,'Marc.Dupond@gmail.com','MarcD');
+INSERT INTO UTILISATEUR VALUES (null,'Dupond','Marc','Homme','1980-3-7',75,0,'Marc.Dupond@gmail.com','mdp');
 INSERT INTO UTILISATEUR VALUES (null,'Tchoupi','Vittel','Femme','1996-12-15',55,1,'Vittel.Tchoupi@gmail.com','VittelT');
 INSERT INTO UTILISATEUR VALUES (null,'Acer','Evian','Homme','1958-1-20',50,1,'Evian.Acer@gmail.com','EvianA');
 INSERT INTO UTILISATEUR VALUES (null,'Google','Veronique','Femme','1970-6-18',75,0,'Veronique.Google@gmail.com','VeroniqueG');

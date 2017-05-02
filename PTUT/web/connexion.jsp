@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/style.css">
@@ -12,21 +13,20 @@
   <title>E-breath</title>
 </head>
 
-
 <body>
 
+  <!-- Barre de menus -->
   <nav class="navbar navbar-inverse">
     <h1 align="center"><font color="white">E-Breath</font></h1>
-    <h2 align="center"><font color="white">Espace connexion</font></h2>
     <div class="container-fluid">
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index1.html">Accueil</a></li>
-          <li><a href="projet.html">Projet</a></li>
+          <li><a href="Accueil">Accueil</a></li>
+          <li><a href="Projet">Projet</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li  class="active"><a href="connexion.html">Connexion</a></li>
-          <li><a href="inscription.html">S'inscrire</a></li>
+          <li  class="active"><a href="Connexion">Connexion</a></li>
+          <li><a href="Inscription">S'inscrire</a></li>
         </ul>
       </div>
     </div>
@@ -36,7 +36,7 @@
     <div class="row" >
 
       <div id="formulaire" class="col-md-4 col-md-offset-4">
-        <form class="connexion" action="Connexion" method="POST">
+        <form class="connexion" action="traitementConnexion" method="POST">
           <br><br><br>
           <div class="form-group">
             <label>Veuillez saisir votre identifiant</label>
@@ -45,8 +45,8 @@
             <div class="texte_identifiant">
               Votre identifiant est votre adresse mail
             </div>
-            <br>
-            <label>Veuillez saisir votre mot de passe</label>
+            <br><br>
+            <label>Veuillez saisir votre mot de passe</label> <br>
             <input type="password" class="form-control" name="motDePasse" placeholder="Mot de passe">
             <a href="#" id="lien_identifiant">J'ai oublié mon mot de passe ? Je clique ici !</a>
           </div>
@@ -61,6 +61,7 @@
               <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Se connecter
             </button>
           </div>
+          ${error}
         </form>
 
       </div>
@@ -69,4 +70,9 @@
 
 
 </body>
+
+<footer align="center">
+  Copyright© 2017 - Team E-Breath - Tous droits réservés.
+</footer>
+
 </html>

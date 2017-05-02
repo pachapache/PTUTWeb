@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Anaïs/Documents/GitHub/PTUTWeb/PTUT/web/page_chill.html</file>
-            <file>file:/C:/Users/Anaïs/Documents/GitHub/PTUTWeb/PTUT/web/js/traitement_chill.js</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/model/DAO.java</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/js/traitement_freq.css</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/Output.json</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/js/traitement_historique.js</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Historique.java</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/jeux.jsp</file>
         </group>
     </open-files>
 </project-private>

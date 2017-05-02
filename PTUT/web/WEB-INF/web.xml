@@ -9,8 +9,8 @@
         <servlet-class>servlet.Inscription</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Settings</servlet-name>
-        <servlet-class>servlet.Settings</servlet-class>
+        <servlet-name>Param</servlet-name>
+        <servlet-class>servlet.Param</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Accueil</servlet-name>
@@ -18,11 +18,47 @@
     </servlet>
     <servlet>
         <servlet-name>Deconnexion</servlet-name>
-        <servlet-class>servlet.Accueil</servlet-class>
+        <servlet-class>servlet.Deconnexion</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Monprofil</servlet-name>
         <servlet-class>servlet.Monprofil</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>traitementConnexion</servlet-name>
+        <servlet-class>servlet.traitementConnexion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>traitementInscription</servlet-name>
+        <servlet-class>servlet.traitementInscription</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Projet</servlet-name>
+        <servlet-class>servlet.Projet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Jeux</servlet-name>
+        <servlet-class>servlet.Jeux</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>traitementParam</servlet-name>
+        <servlet-class>servlet.traitementParam</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Historique</servlet-name>
+        <servlet-class>servlet.Historique</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>traitementHistorique</servlet-name>
+        <servlet-class>servlet.traitementHistorique</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Frequence</servlet-name>
+        <servlet-class>servlet.Frequence</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>historiqueJSON</servlet-name>
+        <servlet-class>servlet.historiqueJSON</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Connexion</servlet-name>
@@ -33,8 +69,8 @@
         <url-pattern>/Inscription</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Settings</servlet-name>
-        <url-pattern>/Settings</url-pattern>
+        <servlet-name>Param</servlet-name>
+        <url-pattern>/Param</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Accueil</servlet-name>
@@ -47,6 +83,42 @@
     <servlet-mapping>
         <servlet-name>Monprofil</servlet-name>
         <url-pattern>/Monprofil</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>traitementConnexion</servlet-name>
+        <url-pattern>/traitementConnexion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>traitementInscription</servlet-name>
+        <url-pattern>/traitementInscription</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Projet</servlet-name>
+        <url-pattern>/Projet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Jeux</servlet-name>
+        <url-pattern>/Jeux</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>traitementParam</servlet-name>
+        <url-pattern>/traitementParam</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Historique</servlet-name>
+        <url-pattern>/Historique</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>traitementHistorique</servlet-name>
+        <url-pattern>/traitementHistorique</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Frequence</servlet-name>
+        <url-pattern>/Frequence</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>historiqueJSON</servlet-name>
+        <url-pattern>/historiqueJSON</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

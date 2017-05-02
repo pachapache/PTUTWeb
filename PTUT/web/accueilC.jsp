@@ -1,5 +1,8 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/style.css">
@@ -9,26 +12,30 @@
   <title>E-breath</title>
 </head>
 
-
 <body>
 
+  <!-- Barre de menus -->
   <nav class="navbar navbar-inverse">
     <h1 align="center"><font color="white">E-Breath</font></h1>
+    <h2 align="center"><font color="white">${sessionScope.nom} ${sessionScope.prenom} </font></h2>
     <div class="container-fluid">
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li  class="active"><a href="accueil1.html">Accueil</a></li>
-          <li><a href="projet.html">Projet</a></li>
-          <li><a href=#>Ma fréquence actuelle</a></li>
-          <li><a href=#>Historique</a></li>
-          <li><a href=#>Jeux de respiration</a></li>
-          <li><a href="param.html">Paramètre du compte</a></li>
+          <li  class="active"><a href="Accueil">Accueil</a></li>
+          <li><a href="Projet">Projet</a></li>
+          <li><a href="Frequence">Ma fréquence actuelle</a></li>
+          <li><a href="Historique">Historique</a></li>
+          <li><a href="Jeux">Jeux de respiration</a></li>
+          <li><a href="Param">Paramètres du compte</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Deconnexion">Se deconnecter</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-
+  <!-- Carousel images -->
   <div id="my_carousel" class="carousel slide" data-ride="carousel">
     <!-- Bulles -->
     <ol class="carousel-indicators">
@@ -70,29 +77,21 @@
 
     <br><br>
 
+    <!-- Bulles informations -->
+    <div class="col-md-4">
+      <div class="circle">Suivi régulier</div>
+    </div>
+    <div class="col-md-4">
+      <div class="circle">Statistiques</div>
+    </div>
+    <div class="col-md-4">
+      <div class="circle">Exercices de respiration</div>
+    </div>
 
+  </body>
 
-          <div class="col-md-4">
-            <div class="circle">Suivi régulier</div>
-          </div>
+  <footer align="center">
+    Copyright© 2017 - Team E-Breath - Tous droits réservés.
+  </footer>
 
-          <div class="col-md-4">
-            <div class="circle">Statistiques</div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="circle">Exercices de respiration</div>
-          </div>
-
-
-          </div>
-        </div>
-      </div>
-
-    </body>
-    <footer align="center">
-            Copyright ©	2017 Team E-Breath - Tous droits réservés.
-    </footer>
-
-
-    </html>
+  </html>

@@ -1,37 +1,27 @@
-$(document).ready(function() {
-  //console.log("page_chargée");
-  //$("#inscriptionValide").hide();
-  //$("#mdpInvalide").hide();
+$(document).ready(function () {
+    $("#mdpInvalide").hide();
+    $("#adrInvalide").hide();
 
+    var form = document.getElementById("formulaire");
+    form.addEventListener("focus", function (event) {
+        var mdp1 = $("#mdp").val();
+        var mdp2 = $("#newMdp").val();
+        var adr1 = $("#mail").val();
+        var adr2 = $("#newMail").val();
 
-})
-// Bouton valider qui vérifie le formulaire:
-//$("#formulaire").submit(function(event){
- // event.preventDefault();
- // console.log("formulaire passe au submit ");
- // var val1 = document.getElementById("mdp").value;
- // var val2 = document.getElementById("confirmMdp").value;
-  //calculate_age(); // appel de la fonciton qui calcule l'âge
+        if (mdp1 === mdp2 && (mdp1 !== "" || mdp2 !== "")) {
+            $("#mdpInvalide").hide();
+        }
+        if (mdp1 !== mdp2 && (mdp1 !== "" || mdp2 !== "") && (mdp1 !== "" && mdp2 !== "")) {
+            $("#mdpInvalide").show("slow");
+        }
+        if (adr1 === adr2 && (adr1 !== "" || adr2 !== "")) {
+            $("#adrInvalide").hide();
+        }
+        if (adr1 !== adr2 && (adr1 !== "" || adr2 !== "") && (adr1 !== "" && adr2 !== "")) {
+            $("#adrInvalide").show("slow");
+        }
+    }, true);//fin de la vérification de l'identité des mdp adr
 
-  //Compare les mots de passe saisis s'ils sont différents: erreur
- // if(val1!==val2) {
- //   console.log("mot de passe ko");
- //   $("#mdpInvalide").show("slow").delay(3000).hide("slow");
+})//fin du document js
 
-  //}
-  // Vérifie que l'age de la personne est possible
-  /*else if (18<age<=110){
-    console.log("date de naissance incorrecte");
-    $("#dateDeNaissInvalide").show("slow").delay(3000).hide("slow");
-
-
-  }*/
-  //else{ //Tout va bien l'inscription se fait et on passe à l'écran d'accueil
-    //console.log("mot de passe ok");
-    //$("#inscriptionValide").show("slow").delay(3000).hide("slow");
-  //}
-
-
-//}); // Fin du formulaire.submit
-
-//}); // Fin du docuemnt.ready

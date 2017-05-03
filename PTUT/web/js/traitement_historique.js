@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).onload(function () {
     $("#quotidien").show();
     $("#hebdomadaire").hide();
     $("#mensuel").hide();
@@ -47,6 +47,18 @@ $(document).ready(function () {
         c10 = null;
         c11 = null;
         c12 = null;
+        c13 = null;
+        c14 = null;
+        c15 = null;
+        c16 = null;
+        c17 = null;
+        c18 = null;
+        c19 = null;
+        c20 = null;
+        c21 = null;
+        c22 = null;
+        c23 = null;
+        c24 = null;
         lundi = null;
         mardi = null;
         mercredi = null;
@@ -70,41 +82,77 @@ $(document).ready(function () {
         y2016 = null;
         y2017 = null;
         $.each(data, function (key, val) {
-            if (key === "h0" || key === "h1") {
-                c1 = val + c1;
+            if (key === "h0") {
+                c1 = val;
             }
-            if (key === "h2" || key === "h3") {
-                c2 = val + c2;
+            if (key === "h1") {
+                c2 = val;
             }
-            if (key === "h4" || key === "h5") {
-                c3 = val + c3;
+            if (key === "h2") {
+                c3 = val;
             }
-            if (key === "h6" || key === "h7") {
-                c4 = val + c4;
+            if (key === "h3") {
+                c4 = val;
             }
-            if (key === "h8" || key === "h9") {
-                c5 = val + c5;
+            if (key === "h4") {
+                c5 = val;
             }
-            if (key === "h10" || key === "h11") {
-                c6 = val + c6;
+            if (key === "h5") {
+                c6 = val;
             }
-            if (key === "h12" || key === "h13") {
-                c7 = val + c7;
+            if (key === "h6") {
+                c7 = val;
             }
-            if (key === "h14" || key === "h15") {
-                c8 = val + c8;
+            if (key === "h7") {
+                c8 = val;
             }
-            if (key === "h16" || key === "h17") {
-                c9 = val + c9;
+            if (key === "h8") {
+                c9 = val;
             }
-            if (key === "h18" || key === "h19") {
-                c10 = val + c10;
+            if (key === "h9") {
+                c10 = val;
             }
-            if (key === "h20" || key === "h21") {
-                c11 = val + c11;
+            if (key === "h10") {
+                c11 = val;
             }
-            if (key === "h22" || key === "h23") {
-                c12 = val + c12;
+            if (key === "h11") {
+                c12 = val;
+            }
+            if (key === "h12") {
+                c13 = val;
+            }
+            if (key === "h13") {
+                c14 = val;
+            }
+            if (key === "h14") {
+                c15 = val;
+            }
+            if (key === "h15") {
+                c16 = val;
+            }
+            if (key === "h16") {
+                c17 = val;
+            }
+            if (key === "h17") {
+                c18 = val;
+            }
+            if (key === "h18") {
+                c19 = val;
+            }
+            if (key === "h19") {
+                c20 = val;
+            }
+            if (key === "h20") {
+                c21 = val;
+            }
+            if (key === "h21") {
+                c22 = val;
+            }
+            if (key === "h22") {
+                c23 = val;
+            }
+            if (key === "h23") {
+                c24 = val;
             }
             if (key === "j2") {
                 lundi = val;
@@ -184,17 +232,29 @@ $(document).ready(function () {
         var data = google.visualization.arrayToDataTable([
             ['Heure', 'Fréquence respiratoire'],
             ['00h00', c1],
-            ['02h00', c2],
-            ['04h00', c3],
-            ['06h00', c4],
-            ['08h00', c5],
-            ['10h00', c6],
-            ['12h00', c7],
-            ['14h00', c8],
-            ['16h00', c9],
-            ['18h00', c10],
-            ['20h00', c11],
-            ['22h00', c12],
+            ['01h00', c2],
+            ['02h00', c3],
+            ['03h00', c4],
+            ['04h00', c5],
+            ['05h00', c6],
+            ['06h00', c7],
+            ['07h00', c8],
+            ['08h00', c9],
+            ['09h00', c10],
+            ['10h00', c11],
+            ['11h00', c12],
+            ['12h00', c13],
+            ['13h00', c14],
+            ['14h00', c15],
+            ['15h00', c16],
+            ['16h00', c17],
+            ['17h00', c18],
+            ['18h00', c19],
+            ['19h00', c20],
+            ['20h00', c21],
+            ['21h00', c22],
+            ['22h00', c23],
+            ['23h00', c24],
         ]);
         var options = {
             title: 'Ma fréquence respiratoire quotidienne',
@@ -272,9 +332,6 @@ $(document).ready(function () {
         };
         var chart = new google.visualization.LineChart(document.getElementById('annuel'));
         chart.draw(data, options);
-
-
     }
-
 
 });

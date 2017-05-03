@@ -1,7 +1,6 @@
 package servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,30 +18,30 @@ public class Connexion extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException, Exception {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            
-            String vu_connecte = "/accueilC.jsp";//Session active
-            String vu_connexion = "/connexion.jsp";//Session non active
 
-            HttpSession session = request.getSession(false);//Recupere session
-            
-            try {
-                String result=(String) session.getAttribute("nom");
-                if (result!=null){
+        String vu_connecte = "/accueilC.jsp";//Session active
+        String vu_connexion = "/connexion.jsp";//Session non active
+
+        HttpSession session = request.getSession(false);//Recupere session
+
+        try {
+            String result = (String) session.getAttribute("nom");
+            if (result != null) {
                 request.getRequestDispatcher(vu_connecte).forward(request, response);
-                }else{
+            } else {
                 String message = "<script> $(document).ready(function () {\n $(\"#pbConnexion\").hide();})</script>";
-                request.getServletContext().setAttribute("error", message);
-                request.getRequestDispatcher(vu_connexion).forward(request, response);  
-                }
-            } catch (Exception e) {
-                String message = "<script> $(document).ready(function () {\n $(\"#pbConnexion\").hide();})</script>";
+                //Enleve le message d'erreur de connexion
                 request.getServletContext().setAttribute("error", message);
                 request.getRequestDispatcher(vu_connexion).forward(request, response);
             }
+        } catch (Exception e) {
+            String message = "<script> $(document).ready(function () {\n $(\"#pbConnexion\").hide();})</script>";
+            //Enleve le message d'erreur de connexion
+            request.getServletContext().setAttribute("error", message);
+            request.getRequestDispatcher(vu_connexion).forward(request, response);
         }
     }
-         
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

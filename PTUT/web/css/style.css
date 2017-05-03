@@ -14,48 +14,16 @@ body {
 	background-size: 100% 64px;
 }
 
-#menu {
-	margin-top: 30px;
-}
-
 #choix{
 text-align: center;
-}
-
-.jumbotron {
-	margin-top: 10px;
-	background-image: url('../img/isis.png');
-	background-repeat: no-repeat;
-	background-position: right 30px center;
-	background-size: 250px ;
 }
 
 .formulaire{
 text-align: center;
 }
 
-.menu{
-	font-size: 25px;
-}
-
 .breadcrumb {
 	background-color: white;
-}
-
-
-.lien_general {
-	color: black;
-	text-decoration: none;
-}
-
-.lien_general:hover {
-	text-decoration: underline;
-}
-
-.entete {
-	background-color: #d9edf7;
-	padding: 15px;
-	height: 64px;
 }
 
 .contenu {
@@ -74,22 +42,6 @@ color:white;
 }
 
 .circle{
-	width:300px;
-	height:300px;
-	border-radius:300px;
-	font-size:20px;
-	color:#fff;
-	line-height:300px;
-	text-align:center;
-	background:	#2F4F4F;
-}
-
-.stat{
-	width: 100px;
-	height: 500px
-}
-
-.frequence{
 	width:300px;
 	height:300px;
 	border-radius:300px;

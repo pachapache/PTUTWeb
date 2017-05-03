@@ -20,8 +20,8 @@ public class Inscription extends HttpServlet {
             throws ServletException, IOException, ParseException {
         response.setContentType("text/html;charset=UTF-8");
 
-        String vu_connecte = "/accueilC.jsp";
-        String vu_connexion = "/inscription.jsp";
+        String vu_connecte = "/accueilC.jsp";//Session active
+        String vu_connexion = "/inscription.jsp";//Session inactive
         HttpSession session = request.getSession(false);
 
         try {
@@ -60,6 +60,6 @@ public class Inscription extends HttpServlet {
     @Override
         public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

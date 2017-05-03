@@ -58,7 +58,7 @@
           <h4>Ma moyenne: ${moyenne}</h4>
           <h4>Mon écart type: ${ecart}</h4>
           <h4>Ma fréquence min : ${min}</h4>
-          <h4>Ma fréquence min : ${min}</h4>
+          <h4>Ma fréquence max : ${max}</h4>
         </p>
 
       </div>

@@ -1,8 +1,5 @@
 package model;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.time;
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.time;
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.time;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -80,7 +77,7 @@ public class DAO {
         return result;
     }
 
-    //Trouve un utilisateur à partir de son identifiant 
+    //Cherche un utilisateur à partir de son identifiant 
     //renvoi un utilisateur
     public Utilisateur findUtilisateur(String mail) throws Exception {
         Utilisateur result = null;
@@ -124,7 +121,8 @@ public class DAO {
         return result;
     }
 
-    //Permet de recuperer la dernière données d'un individu
+    //Permet de recuperer la dernière données d'un utilisateur
+    //Renvoi une donnée
     public Donnee derniereDonnee(int id) throws Exception {
         Donnee result = new Donnee(0, 0, null, null, 0);
         String sql = "SELECT * FROM donnees WHERE id_utilisateur = ? ORDER BY id_donnees DESC LIMIT 1; ";
@@ -145,7 +143,7 @@ public class DAO {
         return result;
     }
 
-    //Permet de recuperer la frequence moyenne d'un individu
+    //Permet de recuperer la frequence moyenne d'un utilisateur
     public int getMoyenne(int id) throws Exception {
         int result = 0;
         String sql = "SELECT AVG(valeur) FROM donnees WHERE id_utilisateur = ? ";
@@ -165,7 +163,7 @@ public class DAO {
         return result;
     }
 
-    //Permet de recuperer la frequence ecart-type d'un individu
+    //Permet de recuperer la frequence ecart-type d'un utilisateur
     public int getEcart(int id) throws Exception {
         int result = 0;
         String sql = "SELECT STD(valeur) FROM donnees WHERE id_utilisateur = ? ";
@@ -185,7 +183,7 @@ public class DAO {
         return result;
     }
 
-    //Permet de recuperer la frequence minimale d'un individu
+    //Permet de recuperer la frequence minimale d'un utilisateur
     public int getMin(int id) throws Exception {
         int result = 0;
         String sql = "SELECT MIN(valeur) FROM donnees WHERE id_utilisateur = ? ";
@@ -205,7 +203,7 @@ public class DAO {
         return result;
     }
 
-    //Permet de recuperer la frequence maximale d'un individu
+    //Permet de recuperer la frequence maximale d'un utilisateur
     public int getMax(int id) throws Exception {
         int result = 0;
         String sql = "SELECT MAX(valeur) FROM donnees WHERE id_utilisateur = ? ";
@@ -225,7 +223,11 @@ public class DAO {
         return result;
     }
 
-    //Permet de recuperer l'historique de l'individu
+    //Permet de recuperer l'historique de l'utilisateur
+    // par jour
+    // par heure
+    // par mois
+    // par an
     public Map<String, Double> historique(int id) throws SQLException {
         Map<String, Double> result = new HashMap<>();
         String sqlQ = "SELECT AVG(Valeur), DAYOFWEEK(DATE_MESURE) FROM ptut_freq_res.donnees WHERE (id_utilisateur = ? ) group by DAYOFWEEK(DATE_MESURE)";

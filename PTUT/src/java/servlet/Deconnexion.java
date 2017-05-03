@@ -1,7 +1,6 @@
 package servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,13 +15,11 @@ public class Deconnexion extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {          
-            response.setContentType("text/html");  
-            request.getRequestDispatcher("index.jsp").include(request, response);
-            HttpSession session=request.getSession(true);
-            session.invalidate();    //Supprime les attributs de la session en cours
-            }  
-    }  
+
+        request.getRequestDispatcher("index.jsp").include(request, response);
+        HttpSession session = request.getSession(true);
+        session.invalidate();    //Supprime les attributs de la session en cours
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

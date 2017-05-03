@@ -37,9 +37,9 @@
             <h1 align="center">Présentation du projet</h1>
 
             <br><br>
-            <p> Nous sommes sept étudiants en 1er année de cycle ingénieur de l'école ISIS (Informatique et Système d'Information pour
+            <p> Nous sommes sept étudiants en 1ère année de cycle ingénieur de l'école d'ingénieurs ISIS (Informatique et Système d'Information pour
                 la Santé). Notre projet est de réaliser un vêtement intelligent capable de récupérer la fréquence respiratoire d'une personne.
-                La personne en question devra être capable de suivre sa fréquence à  l'aide de ce site.
+                Cette application web à donc pour vocation le suivi de cette fréquence.
             </p><br><br>
             <p> 
                 Notre groupe est composé de :        </p>

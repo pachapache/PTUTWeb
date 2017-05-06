@@ -57,9 +57,11 @@
     </div>
 
 </body>
-
 <footer align="center">
-    Copyright 2017 - Team E-Breath - Tous droits réservés.
+      <div class="col-xs-8 col-xs-offset-2" >
+          <br><br>
+  Copyright 2017 - Team E-Breath - Tous droits réservés.
+      </div>
 </footer>
 
 </html>

@@ -1,4 +1,4 @@
-$(document).onload(function () {
+$(window).on("load",function () {
     $("#quotidien").show();
     $("#hebdomadaire").hide();
     $("#mensuel").hide();

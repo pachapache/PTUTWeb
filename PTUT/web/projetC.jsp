@@ -65,8 +65,9 @@
 
 </body>
 <footer align="center">
-    <section>
+      <div class="col-xs-8 col-xs-offset-2" >
+          <br><br>
   Copyright 2017 - Team E-Breath - Tous droits réservés.
-    </section>
+      </div>
 </footer>
 </html>

@@ -3,15 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Param.java</file>
             <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/model/DAO.java</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Connexion.java</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Deconnexion.java</file>
             <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/traitementConnexion.java</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/traitementParam.java</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/Output.json</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/js/traitement_historique.js</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/InsertMySQL_PTUT.sql</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/param.jsp</file>
-            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/MySQL_PTUT.sql</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/connexion.jsp</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Historique.java</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/css/style.css</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/index.jsp</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/historique.jsp</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/frequence_actuelle.jsp</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Accueil.java</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/src/java/servlet/Frequence.java</file>
+            <file>file:/C:/Users/Pauline/Documents/GitHub/PTUTWeb/PTUT/web/accueilC.jsp</file>
         </group>
     </open-files>
 </project-private>

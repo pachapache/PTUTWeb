@@ -45,6 +45,9 @@ public class traitementInscription extends HttpServlet {
                 if (imple != 1) {
                     request.getRequestDispatcher(vu_connInvalide).forward(request, response);
                 } else {
+                    String message = "<script> $(document).ready(function () {\n $(\"#pbConnexion\").hide();})</script>";
+                    //Enleve le message d'erreur de connexion
+                    request.getServletContext().setAttribute("error", message);
                     request.getRequestDispatcher(vu_connValide).forward(request, response);
                 }
             } catch (Exception ex) {

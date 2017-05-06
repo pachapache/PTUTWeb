@@ -32,14 +32,14 @@ public class DAO {
     //Permet de confirmer la connexion
     //renvoi TRUE si mail et mot de passe dans la base de données
     //renvoi FALSE sinon
-    public boolean login(String id, String mdp) throws Exception {
+    public boolean login(String mail, String mdp) throws Exception {
         boolean result = false;
         PreparedStatement stmt = null;
         String sql = "SELECT MDP FROM utilisateur WHERE ADRESSE_MAIL = ?";
         try {
             Connection connection = myDataSource.getConnection();
             stmt = connection.prepareStatement(sql);
-            stmt.setString(1, id);
+            stmt.setString(1, mail);
             try (ResultSet rs = stmt.executeQuery()) {
                 if (rs.next()) {
                     String login = rs.getString("MDP");
